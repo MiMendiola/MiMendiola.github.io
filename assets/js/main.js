@@ -29,7 +29,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== QUALIFICATION TABS ==================== 
+/*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -48,7 +48,7 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification_active')
     })
 })
-*/
+
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
