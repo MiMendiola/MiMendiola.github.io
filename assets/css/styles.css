@@ -11,14 +11,14 @@
 
   /* HSL color mode */
   --first-color: #2f2f2b;
-  --first-color-second: #f0812cd2;
-  --first-color-alt: #f56f0a;
-  --first-color-lighter: #3d3d3d;
+  --first-color-second: #0094ea;
+  --first-color-alt: #000;
+  --first-color-lighter: #000;
   --title-color: #000;
   --text-color: #000;
   --text-color-light: #fff;
-  --input-color: #c7c7c6;
-  --body-color: #2f2f2b44;
+  --input-color: #bce3f9;
+  --body-color: #3baef040;
   --container-color: #2f2f2b6b;
 
   /*========== Font and typography ==========*/
@@ -597,7 +597,7 @@ img {
   left: 1.25rem;
   font-size: var(--small-font-size);
   padding: 0.25rem;
-  background-color: var(--input-color);
+  background-color: #cdeafb;
   z-index: 10;
 }
 
@@ -643,7 +643,7 @@ img {
 }
 
 .footer_social-link {
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   color: var(--text-color);
   padding: 0.5rem;
   border-radius: 0.25rem;
