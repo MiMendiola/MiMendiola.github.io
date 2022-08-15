@@ -76,7 +76,3 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 
-/*==================== SEND EMAIL ====================*/
-
-
-
