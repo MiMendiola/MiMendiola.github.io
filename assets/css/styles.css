@@ -523,7 +523,7 @@ img {
 
 /*==================== CSS PROJECTS MODALS====================*/
 .eins-modal{
-  display: none;
+  /* display: none; */
 }
 .briefcase{
   /* background-color: var(--body-color); */
