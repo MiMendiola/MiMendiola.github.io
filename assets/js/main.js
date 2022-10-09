@@ -65,17 +65,6 @@ let swiper = new Swiper(".swiper-container", {
         clickable: true,
     },
 });
-
-/*==================== SHOW MODALS ====================*/ 
-const einsModal = document.getElementsByClassName('.eins-modal');
-
-einsModal.addEventListener('click', function(e){
-    e.target.classList.add('show')
-    alert("prueba ")
-})
-
-
-
   
 
 /*==================== SHOW SCROLL UP ====================*/ 
