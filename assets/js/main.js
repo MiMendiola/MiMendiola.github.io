@@ -70,7 +70,7 @@ let swiper = new Swiper(".swiper-container", {
 const einsModal = document.getElementsByClassName('.eins-modal');
 
 einsModal.addEventListener('click', function(e){
-    einsModal.target.style.display = "block";
+    e.target.style.display = "block";
 })
 
 
