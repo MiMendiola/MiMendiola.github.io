@@ -71,6 +71,7 @@ const einsModal = document.getElementsByClassName('.eins-modal');
 
 einsModal.addEventListener('click', function(e){
     e.target.classList.add('show')
+    alert("prueba ")
 })
 
 
