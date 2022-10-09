@@ -1,0 +1,22 @@
+{
+  "name": "cv-online_mendiola",
+  "version": "1.0.0",
+  "description": "portfolio 2022",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiMendiola/cv.git"
+  },
+  "author": "Miguel Mendiola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiMendiola/cv/issues"
+  },
+  "homepage": "https://github.com/MiMendiola/cv#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}

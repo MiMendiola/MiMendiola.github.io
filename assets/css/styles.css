@@ -521,6 +521,98 @@ img {
   color: var(--first-color);
 }
 
+/*==================== CSS PROJECTS MODALS====================*/
+.briefcase{
+  /* background-color: var(--body-color); */
+}
+
+.briefcase-container h2{
+  padding: 60px 0 30px;
+  text-align: center;
+}
+
+.briefcase-container .btn{
+  text-align: center;
+  padding: 10px;
+}
+
+.briefcase-container .button{
+  width: 20%;
+  margin-top: 40px;
+}
+
+.briefcase-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px,auto));
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.briefcase-grid img{
+  width: 100%;
+  /* height: 70%; */
+  border-radius: 10px;
+  transition: transform .3s ease;
+}
+
+.briefcase-grid img:hover{
+  transform: scale(1.1);
+}
+
+.eins-modal-content{
+  max-width: 50%;
+  background-color: var(--input-color);
+}
+
+.eins-modal-content .content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+  padding: 5%;
+}
+
+.eins-modal-preview{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eins-modal-preview img{
+  width: 100%;
+  padding: 0 50px 20px 0;
+}
+
+.eins-modal-text p{
+  font-size: 1rem;
+}
+
+.eins-modal-text-2{
+  padding: 20px 0 10px;
+  font-size: 1rem;
+}
+
+.eins-modal-text-2 a{
+  font-size: .9rem;
+  color: var(--first-color);
+}
+
+.eins-modal-text-3{
+  font-size: 1rem;
+}
+
+.eins-modal-tec{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.eins-modal-tec img{
+  width: 50px;
+  height: 50px;
+}
+
+
 /*==================== CONTACT ME ====================*/
 .contact_container {
   row-gap: 3rem;
