@@ -67,20 +67,6 @@ let swiper = new Swiper(".swiper-container", {
 });
   
 
-/*==================== SHOW MODAL ====================*/ 
-// var modalDivs = document.querySelectorAll('.modal-open');
-
-// modalDivs.forEach(function(btn){
-//     btn.onclick = function(){
-//         var modal = btn.getAttribute('data-modal-id')
-
-//         document.getElementById(modal).style.display = "block";
-//     }
-// })
-
-
-
-
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
