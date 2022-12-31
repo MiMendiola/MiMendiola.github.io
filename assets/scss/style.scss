@@ -1,0 +1,293 @@
+@import "variable";
+@import "normalize";
+@import "base";
+
+/*==================== MEDIA QUERIES ====================*/
+/* Nav Menu */
+@media screen and (max-width: 767px) {
+    .nav_menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--first-color-lighter);
+      padding: 4rem 1.5rem 2rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 0 0 1.5rem 1.5rem;
+      transition: 0.4s;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .container {
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
+  
+    /* Nav Menu */
+    .nav_menu {
+      padding: 2rem 0.25rem 4rem;
+    }
+    .navlist {
+      column-gap: 0;
+    }
+  
+    /* Home */
+    .home_content {
+      grid-template-columns: 0.25fr 3fr;
+      text-align: center;
+    }
+  
+    /* Skills */
+    .skills_title {
+      font-size: var(--normal-font-size);
+    }
+    .skills_box {
+      column-gap: 1rem;
+    }
+  
+    /* Qualification */
+    .qualification_data {
+      gap: 0.5rem;
+    }
+
+    /* Modals */
+    .eins-modal-preview{
+        width: 175px;
+    }
+      
+    .eins-modal-text p{
+        font-size: .75rem;
+    }
+      
+    .eins-modal-text-2{
+        padding: 20px 0 10px;
+        font-size: 1rem;
+    }
+      
+    .eins-modal-text-2 a{
+        font-size: .9rem;
+        color: var(--first-color);
+    }
+      
+    .eins-modal-text-3{
+        font-size: 1rem;
+    }
+      
+    .eins-modal-tec{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+      
+    .eins-modal-tec img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+    /* Home */
+    .home_content {
+      grid-template-columns: max-content 1fr 1fr;
+    }
+    .home_data {
+      grid-column: initial;
+    }
+    .home_img {
+      order: 1;
+      margin-left: 1.5rem;
+      justify-self: center;
+    }
+
+    /* Skills */
+    .skills_container {
+        justify-content: center;
+    }
+    
+    .skills_content {
+        padding: 2rem 4rem;
+    }
+  
+    /* Qualification */
+    .qualification_sections {
+      display: grid;
+      grid-template-columns: 0.5fr;
+      justify-content: center;
+      margin-left: 7%;
+    }
+  
+    /* Portfolio */
+    .portfolio_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Contact */
+    .contact_container {
+      grid-template-columns: 300px;
+      justify-content: center;
+    }
+    .contact_form {
+      width: 360px;
+      margin-left: -2.5rem;
+    }
+  
+    /* Footer */
+    .footer_title {
+      font-size: var(--big-font-size);
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    body {
+      margin: 0;
+    }
+
+    .section_title {
+        font-size: var(--big-font-size);
+    }
+    .section_subtitle {
+        font-size: var(--h3-font-size);
+        margin-bottom: 4rem;
+    }
+    
+    .header {
+        top: 0;
+        bottom: initial;
+    }
+    
+    .header,
+    .main,
+    .footer_container {
+        padding: 0 2rem;
+    }
+    
+    /* Nav */
+    .nav {
+      height: 4.5rem;
+      column-gap: 1rem;
+    }
+  
+    .nav_logo,
+    .nav_icon,
+    .nav_close,
+    .nav_toggle {
+      display: none;
+    }
+  
+    .nav_list {
+      display: flex;
+      column-gap: 3rem;
+    }
+  
+    .nav_menu {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Home */
+    #home{
+      padding: 6rem 0 2rem
+    }
+    
+    .home-img {
+      width: 220px;
+    }
+
+    .home_data{
+      grid-column: 3/3 !important;
+    }
+
+    .home_container {
+      row-gap: 5rem;
+    }
+  
+    .home_content {
+      padding-top: 5.5rem;
+      column-gap: 2rem;
+    }
+  
+    /* About */
+    .about_container {
+      column-gap: 5rem;
+    }
+  
+    .about_img {
+      width: 220px;
+    }
+  
+    .about_description {
+      font-size: 1rem;
+      padding: 0 var(--mb-1-5);
+    }
+  
+    .about_info {
+      justify-content: space-between;
+    }
+  
+    .about_buttons {
+      justify-content: initial;
+    }
+  
+    /* Skills */
+    .skills_container {
+      grid-template-columns: repeat(2, 350px);
+      column-gap: 3rem;
+    }
+  
+    /* Qualification */
+    .qualification_tabs {
+      justify-content: center;
+    }
+    .qualification_button {
+      margin: 0 var(--mb-1);
+    }
+    .qualification_sections {
+      grid-template-columns: 0.5fr;
+    }
+  
+    /* Portfolio */
+    .portfolio_content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .portfolio_data {
+      text-align: left !important;
+    }
+
+    .portfolio_button {
+      margin-left: 8rem;
+    }
+  
+    /* Contact */
+    .contact_container {
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      column-gap: 8rem;
+    }
+  
+    /* Footer */
+    .footer_container {
+      padding: 2rem 0;
+    }
+  
+    .footer_social-link {
+      font-size: 1.25rem;
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .header,
+    .main {
+      padding: 0;
+    }
+}

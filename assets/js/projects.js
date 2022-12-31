@@ -6,12 +6,15 @@ modalDivs.forEach(function(btn){
         var modal = btn.getAttribute('data-modal-id');
         const selectedModal = document.getElementById(modal);
 
+
+// sacar a de cada modal
+// add class --
+
         selectedModal.style.display = "block";
     
         for(let i = 0; i < modalDivs.length; i++){
             var span = document.getElementsByClassName('close')[i];
 
-            console.log(i)
             span.onclick = function() {
                 selectedModal.style.display = 'none';
             };
