@@ -1,615 +1,487 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0e14">
+    <meta name="color-scheme" content="dark light">
 
-        <!--==================== W3SCHOOL ICONS ====================-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Miguel Mendiola | Software Developer</title>
+    <meta name="description" content="Portfolio of Miguel Mendiola, a software developer specialized in Java, PHP, Python, React and Angular. 42 Madrid student. See recent projects and get in touch.">
+    <meta name="author" content="Miguel Mendiola">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mimendiola.github.io/">
 
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!--==================== OPEN GRAPH ====================-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Miguel Mendiola | Software Developer">
+    <meta property="og:description" content="Software developer specialized in Java, PHP, Python and modern frameworks like React and Angular.">
+    <meta property="og:image" content="https://mimendiola.github.io/assets/img/perfil.jpeg">
+    <meta property="og:url" content="https://mimendiola.github.io/">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
 
-        <title>CV | Miguel Mendiola</title>
-        <link rel="shortcut icon" type="image/jpg" href="./assets/img/logo.ico"/>
+    <!--==================== FAVICONS & PWA ====================-->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icons/icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./assets/img/icons/icon-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icons/icon-180.png">
+    <link rel="manifest" href="./manifest.json">
 
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav_logo">Miguel</a>
+    <!--==================== GOOGLE FONTS ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link">
-                                <i class="fa fa-home nav_icon"></i> Home                           
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#about" class="nav_link">
-                                <i class="fa fa-user nav_icon"></i> About
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="fa fa-cogs nav_icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#qualification" class="nav_link">
-                                <i class="fa fa-graduation-cap nav_icon"></i> Qualification
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#portfolio" class="nav_link">
-                                <i class="fa fa-laptop nav_icon"></i> Portfolio
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="fa fa-send-o nav_icon"></i> Contact                            
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="fa fa-close nav_close" id="nav-close"></i>
-                </div>
-                <div class="nav_btns">
-                    <div class="nav_toggle" id="nav-toggle">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <!--==================== ICONS ====================-->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home_container container grid">
-                    <div class="home_content grid">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/miguel-mendiola-ara" target="_blank" class="home_social-icon">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                            <a href="https://github.com/MiMendiola" target="_blank" class="home_social-icon">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </div>
+    <!--==================== STRUCTURED DATA ====================-->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Miguel Mendiola",
+      "url": "https://mimendiola.github.io/",
+      "image": "https://mimendiola.github.io/assets/img/perfil.jpeg",
+      "jobTitle": "Software Developer",
+      "email": "mailto:mglmendiol@gmail.com",
+      "telephone": "+34636673331",
+      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
+      "sameAs": [
+        "https://www.linkedin.com/in/miguel-mendiola-ara",
+        "https://github.com/MiMendiola",
+        "https://www.instagram.com/mendiiolaaa",
+        "https://www.facebook.com/miguel.mendiola.142687",
+        "https://www.twitter.com/mendiiolaaa"
+      ],
+      "knowsAbout": ["Java", "PHP", "Python", "React", "Angular", "Spring Boot", "Docker"],
+      "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "42 Madrid" }]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-                        <div class="home-img">
-                            <img src="assets/img/perfil.jpeg" class="home_img">
-                        </div>
+    <!--==================== BACKGROUND FX ====================-->
+    <div class="bg-grid" aria-hidden="true"></div>
 
-                        <div class="home_data">
-                            <h1 class="home_title">I'm Miguel <br> Web Developer</h1>
-                            <!-- <h3 class="home_subtitle">Web developer</h3> -->
-                            <!-- <p class="home_description">Studied cross-platform development and currently studing to become a web developer.</p> -->
-                            <a href="mailto:mglmendiol@gmail.com" class="button button--flex">
-                                Contact Me <i class="fa fa-envelope button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav_logo">Miguel<span>.</span></a>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section_title">About Me</h2>
-                <span class="section_subtitle">Introduction</span>
-
-                <div class="about_container container grid">
-                    <div class="about_data">
-                        <p class="about_description">
-                            Young student eager to work as a developer.
-                            I'm a fast learner who's always seeking to improve my skills, which is an advantage in the computing world due to the fact that it undergoes constant changes and updates. I am a very adaptable person and a very efficient problem solver.
-                        </p>
-                    </div>
-
-                    <!-- <div class="about_info">
-                        <div>
-                            <span class="about_info-title">2</span>
-                            <span class="about_info-name">Years <br> experience</span>
-                        </div>
-                        <div>
-                            <span class="about_info-title">10</span>
-                            <span class="about_info-name">Completed <br> proyect</span>
-                        </div>
-                        <div>
-                            <span class="about_info-title">4</span>
-                            <span class="about_info-name">Companies <br> worked</span>
-                        </div>
-                    </div> -->
-                   
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section_title">Skills</h2>
-
-                <div class="skills_container container grid">
-                    <div class="skills_content">
-                        <h3 class="skills_title">Frontend developer</h3>
-
-                        <div class="skills_box">
-                            <div class="skills_group">
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/html.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">HTML 5</h3>
-                                </div>
-                                
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/js-file.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">JavaScrpit</h3>
-                                </div>
-
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/wordpress.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">WordPress</h3>
-                                </div>
-                            </div>
-                            
-                            <div class="skills_group">
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/css.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">CSS 3</h3>
-                                </div>
-                                
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/react.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">React JS</h3>
-                                </div>
-
-                                <!-- <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/wordpress.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">WordPress</h3>
-                                </div> -->
-                            </div>
-                            <div class="skills_group">
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/sass.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">SASS</h3>
-                                </div>
-                                
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/git.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">Git</h3>
-                                </div>
-
-                                <!-- <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/html.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">Git</h3>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills_content">
-                        <h3 class="skills_title">Backend developer</h3>
-
-                        <div class="skills_box">
-                            <div class="skills_group">
-
-                                <div class="skills_data">    
-                                    <div>
-                                        <img src="./assets/img/Tech/php.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">PHP</h3>
-                                </div>
-
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/java.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">Java</h3>
-                                </div>
-                                
-                                <!-- <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/python.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">Python</h3>
-                                </div> -->
-                            </div>
-
-                            <div class="skills_group">
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/mysql.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">MySQL</h3>
-                                </div>
-                            </div>
-            
-                            <div class="skills_group">
-                                <div class="skills_data">
-                                    <div>
-                                        <img src="./assets/img/Tech/python.svg" alt="">
-                                    </div>
-                                    <h3 class="skills_name">Python</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section_title">Qualification</h2>
-                <span class="section_subtitle">My personal journey</span>
-                
-                <div class="qualification_container container">
-                    <div class="qualification_tabs">
-                        <div class="qualification_button button-flex qualification_active" data-target='#education'>
-                            <i class="fa fa-graduation-cap qualification_icon"></i>
-                            Education
-                        </div>
-                        
-                        <div class="qualification_button button-flex" data-target='#work'>
-                            <i class="fa fa-briefcase qualification_icon"></i>
-                            Work
-                        </div>
-                    </div>
-
-                    <div class="qualification_sections">
-                        <!--==================== QUALIFICATION CONTENT STUDIES ====================-->
-                        <div class="qualification_content qualification_active" data-content id="education">
-                            <!--==================== CONTENT 1 ====================-->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Web Development</h3>
-                                    <span class="qualification_subtitle">TAMWOOD CAREERS - VANCOUVER</span>
-                                    <div class="qualification_calendar">
-                                        <i class="fa fa-calendar"></i>
-                                        2021 - NOW
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                            
-                            <!--==================== CONTENT 2 ====================-->
-                            <div class="qualification_data">
-                                <div></div>
-                                
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                                
-                                <div>
-                                    <h3 class="qualification_title">Informatic Security Technical Course</h3>
-                                    <span class="qualification_subtitle">AYLA DISEÑO Y TECNOLOGIA - SPAIN</span>
-                                    <div class="qualification_calendar">
-                                        <i class="fa fa-calendar"></i>
-                                        2021
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--==================== CONTENT 3 ====================-->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Cross-platform application developer Technical Course</h3>
-                                    <span class="qualification_subtitle">IES BRIANDA DE MENDOZA - SPAIN</span>
-                                    <div class="qualification_calendar">
-                                        <i class="fa fa-calendar"></i>
-                                        2018 - 2020
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <!-- <span class="qualification_line"></span> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ==================== QUALIFICATION CONTENT WORK ==================== -->
-                        <div class="qualification_content" data-content id="work">
-                            <!-- ==================== CONTENT 3 ==================== -->
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span> 
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification_title">Menara Diseño</h3>
-                                    <span class="qualification_subtitle">Website Developer</span>
-                                    <div class="qualification_calendar">
-                                        <i class="fa fa-calendar"></i>
-                                        08/2021 - 04/2022
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ==================== CONTENT 2 ==================== -->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Vapeo Digital</h3>
-                                    <span class="qualification_subtitle">E-Commerce Designer</span>
-                                    <div class="qualification_calendar">
-                                        <i class="fa fa-calendar"></i>
-                                        12/2020 - 02/2021
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                            
-                            <!-- ==================== CONTENT 1 ==================== -->
-                            <div class="qualification_data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <!-- <span class="qualification_line"></span> -->
-                                </div>
-                                
-                                <div>
-                                    <h3 class="qualification_title">Check&Life</h3>
-                                    <span class="qualification_subtitle">Web Developer</span>
-                                    <div class="qualification_calendar">
-                                        <i class="fa fa-calendar"></i>
-                                        08/2020 - 11/2020
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section_title">Portfolio</h2>
-                <span class="section_subtitle">Most recent work</span>
-
-                <div class="portfolio_container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/Portfolios/check&life.jpg" alt="Check&Life" class="portfolio_img">
-                        
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Check&Life</h3>
-                                <p class="portfolio_description">
-                                    The website was changed of platform from Wix to Wordpress in a fast and efficient way. Apart from this change, 
-                                    an improvement of the website was carried out.
-                                </p>
-                            
-                                <a href="https://checkandlife.com/" class="button button--flex button-small portfolio_button" target="_blank">
-                                    Demo <i class="fa fa-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/Portfolios/vapeoDig.jpg" alt="VapeoDigital" class="portfolio_img">
-                        
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Vapeo Digital</h3>
-                                <p class="portfolio_description">
-                                    Two different CMS were used, one for the visual and main part of the page that was made with 
-                                    Wordpress (which was created from scratch) and after this there was a PrestaShop (it was improved) 
-                                    which was in charge of the sales procedures of the store.
-                                </p>
-                            
-                                <a href="https://vapeodigital.es/es/" class="button button--flex button-smal portfolio_button" target="_blank">
-                                    Demo <i class="fa fa-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/Portfolios/menaraDesign.jpg" alt="MenaraDesign" class="portfolio_img">
-                        
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Menara Diseño</h3>
-                                <p class="portfolio_description">
-                                    Web page made for a construction company in Spain, in which various improvements are periodically carried out and made in WordPress.
-                                </p>
-                            
-                                <a href="http://menaradesign.com/" class="button button--flex button-smal portfolio_button" target="_blank">
-                                    Demo <i class="fa fa-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 4 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/Portfolios/dashboard.jpg" alt="PHPDashboard" class="portfolio_img">
-                        
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Admin Dashboard</h3>
-                                <p class="portfolio_description">
-                                    Admin Dashboard made by React JS. We will be using different kinds of tools such as Material UI, Formik, FullCalendar and Nivo Charts.
-                                </p>
-                            
-                                <a href="https://mimendiola.github.io/adminDashboard/" class="button button--flex button-smal portfolio_button" target="_blank">
-                                    Demo <i class="fa fa-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-                        </div>    
-
-                        <!--==================== PORTFOLIO 5 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/Portfolios/MF-project.jpg" alt="AngularShopHTML" class="portfolio_img">
-                        
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Angular SPA</h3>
-                                <p class="portfolio_description">
-                                    This page is completed by angular as a single page application(SPA) referring to a perfume shop.
-                                </p>
-                            
-                                <a href="https://mimendiola.github.io/Angular-SPA-shop/" class="button button--flex button-smal portfolio_button" target="_blank">
-                                    Demo <i class="fa fa-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-                        </div>   
-                    </div>
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next">
-                        <i class="fa fa-angle-right swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="fa fa-angle-left swiper-portfolio-icon"></i>
-                    </div>                    
-
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section_title">Contact Me</h2>
-                <span class="section_subtitle">Get in touch</span>
-
-                <div class="contact_container container grid">
-                    <div class="contact_content">
-                        <h3 class="contact_title">Talk to me</h3>
-
-                        <div class="contact_info">
-                            <div class="contact_card">
-                                <i class="fa fa-send-o contact_card-icon"></i>
-                                <h3 class="contact_card-title">Email</h3>
-                                <span class="contact_card-data">mglmendiol@gmail.com</span>
-                            
-                                <a href="mailto:mglmendiol@gmail.com" target="_blank" class="contact_button">
-                                    Email me <i class="fa fa-arrow-right contact_button-icon"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact_card">
-                                <i class="fa fa-whatsapp contact_card-icon"></i>
-                                <h3 class="contact_card-title">Whatsapp</h3>
-                                <span class="contact_card-data">236-512-9848</span>
-                            
-                                <a href="https://api.whatsapp.com/send/?phone=%2B12365129848&" target="_blank" class="contact_button">
-                                    Text me <i class="fa fa-arrow-right contact_button-icon"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact_card">
-                                <i class="fa fa-bolt contact_card-icon"></i>
-                                <h3 class="contact_card-title">Messenger</h3>
-                                <span class="contact_card-data">Miguel Mendiola</span>
-                            
-                                <a href="http://m.me/miguel.mendiola.142687" target="_blank" class="contact_button">
-                                    Text me <i class="fa fa-arrow-right contact_button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact_content">
-                        <h3 class="contact_title">Contact me</h3>
-
-                        <form method="POST" action="https://formspree.io/f/xknegwoq" class="contact_form" enctype=”multipart/form-data”>
-                            <div class="contact_form-div">
-                                <label for="" class="contact_form-tag">Name</label>
-                                <input type="text" class="contact_form-input" name="name" placeholder="Enter your name">
-                            </div>
-
-                            <div class="contact_form-div">
-                                <label for="" class="contact_form-tag">Email</label>
-                                <input type="email" class="contact_form-input"  name="email" placeholder="Enter your email">
-                            </div>
-
-                            <div class="contact_form-div contact_form-area">
-                                <label for="" class="contact_form-tag">Contact me</label>
-                                <textarea cols="30" rows="10" class="contact_form-input"  name="message" placeholder="Write what do you need"></textarea>
-                            </div>
-
-                            <button class="button" onclick="sendEmail()">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer_container container">
-                <h1 class="footer_title">Miguel Mendiola</h1>
-
-                <ul class="footer_list">
-                    <li>
-                        <a href="#about" class="footer_link">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="footer_link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer_link">Portfolio</a>
-                    </li>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item"><a href="#home" class="nav_link"><i class="fa fa-home nav_icon"></i> <span data-i18n="nav.home">Home</span></a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link"><i class="fa fa-user nav_icon"></i> <span data-i18n="nav.about">About</span></a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link"><i class="fa fa-cogs nav_icon"></i> <span data-i18n="nav.skills">Skills</span></a></li>
+                    <li class="nav_item"><a href="#qualification" class="nav_link"><i class="fa fa-graduation-cap nav_icon"></i> <span data-i18n="nav.qualification">Qualification</span></a></li>
+                    <li class="nav_item"><a href="#portfolio" class="nav_link"><i class="fa fa-laptop nav_icon"></i> <span data-i18n="nav.portfolio">Portfolio</span></a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link"><i class="fa fa-send-o nav_icon"></i> <span data-i18n="nav.contact">Contact</span></a></li>
                 </ul>
-
-                <ul class="footer_social"> 
-                    <a href="https://www.instagram.com/mendiiolaaa?utm_medium=copy_link" target="_blank" class="footer_social-link">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/miguel.mendiola.142687" target="_blank" class="footer_social-link">
-                        <i class="fa fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.twitter.com/mendiiolaaa" target="_blank" class="footer_social-link">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </ul>
-
-                <span class="footer_copy">
-                    &#169; Miguel Mendiola, All rights reserved
-                </span>
+                <i class="fa fa-close nav_close" id="nav-close"></i>
             </div>
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#home" class="scrollup" id="scroll-up">
-            <i class="fa fa-arrow-up scrollup_icon"></i>
-        </a>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+            <div class="nav_btns">
+                <button class="lang_toggle" id="lang-toggle" type="button" aria-label="Switch language">
+                    <span id="lang-toggle-label">ES</span>
+                </button>
+                <button class="theme_toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+                    <i class="fa fa-moon-o theme_icon-dark"></i>
+                    <i class="fa fa-sun-o theme_icon-light"></i>
+                </button>
+                <div class="nav_toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <main class="main" id="main-content">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/miguel-mendiola-ara" target="_blank" rel="noopener noreferrer" class="home_social-icon" aria-label="LinkedIn">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a href="https://github.com/MiMendiola" target="_blank" rel="noopener noreferrer" class="home_social-icon" aria-label="GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="home-img">
+                        <img src="assets/img/perfil.jpeg" width="683" height="1024" class="home_img" alt="Portrait of Miguel Mendiola" fetchpriority="high">
+                    </div>
+
+                    <div class="home_data" data-reveal>
+                        <span class="home_badge"><i class="fa fa-circle"></i> <span data-i18n="hero.badge">Available for work</span></span>
+                        <h1 class="home_title">
+                            <span data-i18n="hero.greeting">I'm Miguel</span><br>
+                            <span class="home_title-accent" id="typewriter"></span><span class="typewriter_cursor" aria-hidden="true">&nbsp;</span>
+                        </h1>
+                        <p class="home_description" data-i18n="hero.description">
+                            Software developer focused on automation, cloud and web development &mdash; from Java &amp; Spring Boot to React and PHP.
+                        </p>
+                        <div class="home_btns">
+                            <a href="mailto:mglmendiol@gmail.com" class="button button--flex">
+                                <span data-i18n="hero.contactBtn">Contact Me</span> <i class="fa fa-envelope button_icon"></i>
+                            </a>
+                            <a href="#portfolio" class="button button--ghost" data-i18n="hero.workBtn">View Work</a>
+                            <a href="assets/cv/MiguelMendiola_CV_ES.pdf" download class="button button--ghost" title="PDF, Spanish">
+                                <span data-i18n="hero.cvBtn">Download CV</span> <i class="fa fa-download button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#about" class="home_scroll" aria-label="Scroll down">
+                    <i class="fa fa-angle-down home_scroll-icon"></i>
+                </a>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section_title" data-i18n="about.title" data-reveal>About Me</h2>
+            <span class="section_subtitle" data-i18n="about.subtitle" data-reveal>Introduction</span>
+
+            <div class="about_container container grid">
+                <div class="about_data" data-reveal>
+                    <p class="about_description" data-i18n="about.description">
+                        Software developer with experience in automation, cloud and web development. Specialized in Java, PHP,
+                        Python and modern frameworks like React and Angular. Focused on building scalable solutions, improving
+                        processes through automation and applying agile methodologies to deliver efficient, reliable software.
+                    </p>
+
+                    <div class="about_tags">
+                        <span class="about_tag"><i class="fa fa-map-marker"></i> Madrid, <span data-i18n="about.location">Spain</span></span>
+                        <span class="about_tag"><i class="fa fa-language"></i> <span data-i18n="about.languages">Spanish (native) &middot; English (advanced) &middot; Italian (basic)</span></span>
+                        <span class="about_tag"><i class="fa fa-graduation-cap"></i> <span data-i18n="about.current">Currently: 42 Madrid &mdash; Telef&oacute;nica</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title" data-i18n="skills.title" data-reveal>Skills</h2>
+            <span class="section_subtitle" data-i18n="skills.subtitle" data-reveal>What I work with</span>
+
+            <div class="skills_container container grid">
+                <div class="skills_content" data-reveal>
+                    <h3 class="skills_title"><i class="fa fa-code"></i> <span data-i18n="skills.frontend">Frontend</span></h3>
+                    <ul class="skills_grid">
+                        <li class="skills_chip"><img src="./assets/img/Tech/html.svg" alt="" loading="lazy"><span>HTML 5</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/css.svg" alt="" loading="lazy"><span>CSS 3</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/sass.svg" alt="" loading="lazy"><span>SASS</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/js-file.svg" alt="" loading="lazy"><span>JavaScript</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/react.svg" alt="" loading="lazy"><span>React</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/angular.png" alt="" loading="lazy"><span>Angular</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/vuedotjs/5b8cff" alt="" loading="lazy"><span>Vue</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/wordpress.svg" alt="" loading="lazy"><span>WordPress</span></li>
+                    </ul>
+                </div>
+
+                <div class="skills_content" data-reveal>
+                    <h3 class="skills_title"><i class="fa fa-server"></i> <span data-i18n="skills.backend">Backend &amp; Languages</span></h3>
+                    <ul class="skills_grid">
+                        <li class="skills_chip"><img src="./assets/img/Tech/php.svg" alt="" loading="lazy"><span>PHP</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/python.svg" alt="" loading="lazy"><span>Python</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/java.svg" alt="" loading="lazy"><span>Java</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/cplusplus/5b8cff" alt="" loading="lazy"><span>C++</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/c/5b8cff" alt="" loading="lazy"><span>C</span></li>
+                        <li class="skills_chip"><img src="./assets/img/Tech/mysql.svg" alt="" loading="lazy"><span>MySQL / SQL</span></li>
+                    </ul>
+                </div>
+
+                <div class="skills_content" data-reveal>
+                    <h3 class="skills_title"><i class="fa fa-wrench"></i> <span data-i18n="skills.tools">Tools &amp; Methodology</span></h3>
+                    <ul class="skills_grid">
+                        <li class="skills_chip"><img src="./assets/img/Tech/git.svg" alt="" loading="lazy"><span>Git</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/github/5b8cff" alt="" loading="lazy"><span>GitHub</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/jira/5b8cff" alt="" loading="lazy"><span>Jira</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/confluence/5b8cff" alt="" loading="lazy"><span>Confluence</span></li>
+                        <li class="skills_chip"><img src="https://cdn.simpleicons.org/jenkins/5b8cff" alt="" loading="lazy"><span>Jenkins</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section_title" data-i18n="qualification.title" data-reveal>Qualification</h2>
+            <span class="section_subtitle" data-i18n="qualification.subtitle" data-reveal>My personal journey</span>
+
+            <div class="qualification_container container" data-reveal>
+                <div class="qualification_tabs">
+                    <button class="qualification_button qualification_active" data-target="#education" type="button">
+                        <i class="fa fa-graduation-cap qualification_icon"></i> <span data-i18n="qualification.education">Education</span>
+                    </button>
+                    <button class="qualification_button" data-target="#work" type="button">
+                        <i class="fa fa-briefcase qualification_icon"></i> <span data-i18n="qualification.work">Work</span>
+                    </button>
+                </div>
+
+                <div class="qualification_sections">
+                    <div class="qualification_content qualification_active" data-content id="education">
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.edu1.title">Software Developer</h3>
+                                <span class="qualification_subtitle">42 Madrid &mdash; Telef&oacute;nica</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.edu1.date">Sep 2022 &ndash; Present</span> &middot; Madrid, <span data-i18n="about.location">Spain</span></div>
+                            </div>
+                        </div>
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.edu2.title">Web Development</h3>
+                                <span class="qualification_subtitle">Tamwood Careers</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.edu2.date">Dec 2021 &ndash; Jan 2023</span> &middot; Vancouver, Canada</div>
+                            </div>
+                        </div>
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.edu3.title">Computer Security Certificate</h3>
+                                <span class="qualification_subtitle">Ayla Dise&ntilde;o y Tecnolog&iacute;a</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.edu3.date">Apr 2021 &ndash; Aug 2021</span> &middot; Guadalajara, <span data-i18n="about.location">Spain</span></div>
+                            </div>
+                        </div>
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.edu4.title">Cross-platform Application Development</h3>
+                                <span class="qualification_subtitle">IES Brianda de Mendoza</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.edu4.date">Sep 2018 &ndash; Jul 2020</span> &middot; Guadalajara, <span data-i18n="about.location">Spain</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification_content" data-content id="work">
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.work1.title">Service Operations Automation</h3>
+                                <span class="qualification_subtitle">Telef&oacute;nica</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.work1.date">Jul 2024 &ndash; Jun 2025</span> &middot; Madrid, <span data-i18n="about.location">Spain</span></div>
+                                <p class="qualification_desc" data-i18n="qualification.work1.desc">Built version 2.0 of the Telef&oacute;nica Tech portal with PHP, MySQL and Python, and automated cloud &amp; cybersecurity processes with Java and Spring Boot.</p>
+                            </div>
+                        </div>
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.work2.title">Frontend Developer</h3>
+                                <span class="qualification_subtitle">Clear Sight Online</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.work2.date">Dec 2021 &ndash; Apr 2023</span> &middot; Vancouver, Canada</div>
+                                <p class="qualification_desc" data-i18n="qualification.work2.desc">Built internal platforms with React 17 and MUI 5, TypeScript CRUD screens, working in agile sprints with Jira and Confluence.</p>
+                            </div>
+                        </div>
+                        <div class="qualification_data">
+                            <span class="qualification_rounder"></span>
+                            <div>
+                                <h3 class="qualification_title" data-i18n="qualification.work3.title">Web Developer</h3>
+                                <span class="qualification_subtitle">Check&amp;Life</span>
+                                <div class="qualification_calendar"><i class="fa fa-calendar"></i> <span data-i18n="qualification.work3.date">Aug 2020 &ndash; Nov 2020</span> &middot; Guadalajara, <span data-i18n="about.location">Spain</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title" data-i18n="portfolio.title" data-reveal>Portfolio</h2>
+            <span class="section_subtitle" data-i18n="portfolio.subtitle" data-reveal>Most recent work</span>
+
+            <div class="portfolio_container container">
+                <!--==================== 42 PROJECT: TRANSCENDENCE ====================-->
+                <a class="portfolio_card portfolio_card--code" data-reveal href="https://github.com/MiMendiola/Trascendencence" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_code-panel">
+                        <i class="fa fa-gamepad portfolio_code-icon"></i>
+                        <span class="portfolio_code-badge">42 Madrid &middot; 2024</span>
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Transcendence</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.transcendence">Real-time multiplayer Pong platform with OAuth2 authentication, live chat and tournaments. Built with Django, PostgreSQL and vanilla JavaScript, deployed with Docker.</p>
+                        <div class="portfolio_stack">
+                            <span>Django</span><span>PostgreSQL</span><span>Docker</span><span>JavaScript</span>
+                        </div>
+                        <span class="portfolio_link"><i class="fa fa-github button_icon"></i> <span data-i18n="portfolio.viewGithub">View on GitHub</span></span>
+                    </div>
+                </a>
+
+                <!--==================== 42 PROJECT: INCEPTION ====================-->
+                <a class="portfolio_card portfolio_card--code" data-reveal href="https://github.com/MiMendiola/Inception" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_code-panel">
+                        <i class="fa fa-server portfolio_code-icon"></i>
+                        <span class="portfolio_code-badge">42 Madrid &middot; 2023</span>
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Inception</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.inception">Containerized services infrastructure built with Docker Compose: NGINX, WordPress and MariaDB, configuring networks, volumes and environment variables on a virtual machine.</p>
+                        <div class="portfolio_stack">
+                            <span>Docker</span><span>NGINX</span><span>WordPress</span><span>MariaDB</span>
+                        </div>
+                        <span class="portfolio_link"><i class="fa fa-github button_icon"></i> <span data-i18n="portfolio.viewGithub">View on GitHub</span></span>
+                    </div>
+                </a>
+
+                <a class="portfolio_card" data-reveal href="https://checkandlife.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_img-wrap">
+                        <img src="assets/img/Portfolios/check&life.jpg" width="1366" height="728" alt="Check&Life website" class="portfolio_img" loading="lazy">
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Check&amp;Life</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.checklife">Migrated the site from Wix to WordPress quickly and efficiently, with improvements along the way.</p>
+                        <span class="portfolio_link"><span data-i18n="portfolio.visitDemo">Visit demo</span> <i class="fa fa-arrow-right button_icon"></i></span>
+                    </div>
+                </a>
+
+                <a class="portfolio_card" data-reveal href="https://vapeodigital.es/es/" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_img-wrap">
+                        <img src="assets/img/Portfolios/vapeoDig.jpg" width="1366" height="728" alt="Vapeo Digital storefront" class="portfolio_img" loading="lazy">
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Vapeo Digital</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.vapeo">A WordPress storefront built from scratch, paired with an improved PrestaShop backend for sales.</p>
+                        <span class="portfolio_link"><span data-i18n="portfolio.visitDemo">Visit demo</span> <i class="fa fa-arrow-right button_icon"></i></span>
+                    </div>
+                </a>
+
+                <a class="portfolio_card" data-reveal href="http://menaradesign.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_img-wrap">
+                        <img src="assets/img/Portfolios/menaraDesign.jpg" width="1897" height="908" alt="Menara Dise&ntilde;o website" class="portfolio_img" loading="lazy">
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Menara Dise&ntilde;o</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.menara">Website for a Spanish construction company, with periodic improvements built in WordPress.</p>
+                        <span class="portfolio_link"><span data-i18n="portfolio.visitDemo">Visit demo</span> <i class="fa fa-arrow-right button_icon"></i></span>
+                    </div>
+                </a>
+
+                <a class="portfolio_card" data-reveal href="https://mimendiola.github.io/adminDashboard/" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_img-wrap">
+                        <img src="assets/img/Portfolios/dashboard.jpg" width="1366" height="623" alt="Admin dashboard built with React" class="portfolio_img" loading="lazy">
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title" data-i18n="portfolio.dashboardTitle">Admin Dashboard</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.dashboard">An admin dashboard built with React, Material UI, Formik, FullCalendar and Nivo Charts.</p>
+                        <span class="portfolio_link"><span data-i18n="portfolio.visitDemo">Visit demo</span> <i class="fa fa-arrow-right button_icon"></i></span>
+                    </div>
+                </a>
+
+                <a class="portfolio_card" data-reveal href="https://mimendiola.github.io/Angular-SPA-shop/" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio_img-wrap">
+                        <img src="assets/img/Portfolios/MF-project.jpg" width="1366" height="618" alt="Angular single-page perfume shop" class="portfolio_img" loading="lazy">
+                    </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title" data-i18n="portfolio.spaTitle">Angular SPA</h3>
+                        <p class="portfolio_description" data-i18n="portfolio.spa">A single-page application built in Angular for a perfume shop.</p>
+                        <span class="portfolio_link"><span data-i18n="portfolio.visitDemo">Visit demo</span> <i class="fa fa-arrow-right button_icon"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title" data-i18n="contact.title" data-reveal>Contact Me</h2>
+            <span class="section_subtitle" data-i18n="contact.subtitle" data-reveal>Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div class="contact_content" data-reveal>
+                    <h3 class="contact_title" data-i18n="contact.talk">Talk to me</h3>
+
+                    <div class="contact_info">
+                        <div class="contact_card">
+                            <i class="fa fa-send-o contact_card-icon"></i>
+                            <h3 class="contact_card-title">Email</h3>
+                            <span class="contact_card-data">mglmendiol@gmail.com</span>
+                            <a href="mailto:mglmendiol@gmail.com" class="contact_button"><span data-i18n="contact.emailMe">Email me</span> <i class="fa fa-arrow-right contact_button-icon"></i></a>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class="fa fa-phone contact_card-icon"></i>
+                            <h3 class="contact_card-title" data-i18n="contact.phone">Phone</h3>
+                            <span class="contact_card-data">+34 636 673 331</span>
+                            <a href="tel:+34636673331" class="contact_button"><span data-i18n="contact.callMe">Call me</span> <i class="fa fa-arrow-right contact_button-icon"></i></a>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class="fa fa-whatsapp contact_card-icon"></i>
+                            <h3 class="contact_card-title">Whatsapp</h3>
+                            <span class="contact_card-data">+34 636 673 331</span>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B34636673331&" target="_blank" rel="noopener noreferrer" class="contact_button"><span data-i18n="contact.textMe">Text me</span> <i class="fa fa-arrow-right contact_button-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_content" data-reveal>
+                    <h3 class="contact_title" data-i18n="contact.send">Send a message</h3>
+
+                    <form method="POST" action="https://formspree.io/f/xknegwoq" class="contact_form">
+                        <div class="contact_form-div">
+                            <label for="contact-name" class="contact_form-tag" data-i18n="contact.name">Name</label>
+                            <input type="text" id="contact-name" class="contact_form-input" name="name" data-i18n-placeholder="contact.namePh" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="contact_form-div">
+                            <label for="contact-email" class="contact_form-tag">Email</label>
+                            <input type="email" id="contact-email" class="contact_form-input" name="email" data-i18n-placeholder="contact.emailPh" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="contact_form-div contact_form-area">
+                            <label for="contact-message" class="contact_form-tag" data-i18n="contact.message">Message</label>
+                            <textarea id="contact-message" cols="30" rows="10" class="contact_form-input" name="message" data-i18n-placeholder="contact.messagePh" placeholder="Write what you need" required></textarea>
+                        </div>
+
+                        <button class="button" type="submit" data-i18n="contact.submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_container container">
+            <h1 class="footer_title">Miguel Mendiola</h1>
+
+            <ul class="footer_list">
+                <li><a href="#about" class="footer_link" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="footer_link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#portfolio" class="footer_link" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="footer_link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <ul class="footer_social">
+                <li><a href="https://www.instagram.com/mendiiolaaa?utm_medium=copy_link" target="_blank" rel="noopener noreferrer" class="footer_social-link" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/miguel.mendiola.142687" target="_blank" rel="noopener noreferrer" class="footer_social-link" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com/mendiiolaaa" target="_blank" rel="noopener noreferrer" class="footer_social-link" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+
+            <span class="footer_copy">&#169; <span id="footer-year">2026</span> Miguel Mendiola, <span data-i18n="footer.rights">All rights reserved</span></span>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="fa fa-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
 </html>
