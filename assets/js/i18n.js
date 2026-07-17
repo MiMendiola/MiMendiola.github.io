@@ -163,6 +163,12 @@ function applyI18n(lang) {
     const value = lookup(lang, el.getAttribute('data-i18n-placeholder'));
     if (typeof value === 'string') el.setAttribute('placeholder', value);
   });
+
+  const cvLink = document.getElementById('cv-download-link');
+  if (cvLink) {
+    cvLink.href = lang === 'es' ? 'assets/cv/MiguelMendiola_CV_ES.pdf' : 'assets/cv/MiguelMendiola_CV_EN.pdf';
+    cvLink.title = lang === 'es' ? 'PDF, Español' : 'PDF, English';
+  }
 }
 
 function detectLang() {
