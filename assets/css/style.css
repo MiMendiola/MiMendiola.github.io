@@ -113,6 +113,23 @@ input, textarea { font-family: inherit; }
 }
 [data-reveal].reveal-visible { opacity: 1; transform: translateY(0); }
 
+/*==================== SPOTLIGHT HOVER ====================*/
+.skills_content::after,
+.portfolio_card::after,
+.contact_card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(280px circle at var(--x, 50%) var(--y, 50%), var(--accent-soft), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.skills_content:hover::after,
+.portfolio_card:hover::after,
+.contact_card:hover::after { opacity: 1; }
+
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
@@ -124,8 +141,7 @@ input, textarea { font-family: inherit; }
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 12px 24px -12px var(--accent-soft);
 }
-.button:hover { transform: translateY(-3px); box-shadow: 0 18px 30px -14px var(--accent-soft); }
-.button--flex { display: inline-flex; align-items: center; }
+.button:hover { transform: translateY(-3px); box-shadow: 0 18px 30px -14px var(--accent-soft); filter: brightness(1.08); }
 .button_icon { margin-left: var(--mb-0-5); font-size: 1.1rem; }
 .button--ghost {
   display: inline-flex;
@@ -506,6 +522,7 @@ input, textarea { font-family: inherit; }
   gap: 1.5rem;
 }
 .portfolio_card {
+  position: relative;
   display: block;
   background: var(--bg-alt);
   border: 1px solid var(--border);
@@ -537,6 +554,8 @@ input, textarea { font-family: inherit; }
 .contact_title { font-size: var(--h3-font-size); margin-bottom: var(--mb-1-5); text-align: center; }
 .contact_info { display: grid; gap: 1rem; }
 .contact_card {
+  position: relative;
+  overflow: hidden;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 1rem;
